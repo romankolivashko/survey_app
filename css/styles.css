@@ -1,0 +1,30 @@
+
+.container {
+  /* background-color: maroon; */
+  max-width: 700px;
+  margin: auto;
+}
+
+.container.p {
+  text-align: center;
+}
+
+.inner-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* .row {
+  background-color: bg-secondary;
+  color: text-white;
+} */
+
+.btn {
+  margin: 7px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
