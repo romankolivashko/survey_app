@@ -21,28 +21,29 @@
         <p style="text-align: left"><strong>Please answer all the questions bellow to your best ability.</strong></p>
         <form>
           <div class="form-group">
-            <label for="firstName">
+            <label for="firstLastName">
               <h5>Some info about you</h5>
             </label>
             <input type="text" class="form-control" id="firstLastName" placeholder="First and Last names">
           </div>
 
           <hr class="my-4">
-
+          <!-- <div class="form-group"> -->
           <h5>Favorite singer:</h5>
           <select class="form-control" id="singer">
             <label for="singer"></label>
-            <option value="1">David Bowie</option>
-            <option value="2">Cardi B</option>
-            <option value="3">Bruce Springsteen</option>
-            <option value="4">Conway Twitty</option>
-            <option value="5">Celine Dion</option>
+            <option>David Bowie</option>
+            <option>Cardi B</option>
+            <option>Bruce Springsteen</option>
+            <option>Conway Twitty</option>
+            <option>Celine Dion</option>
           </select>
-
+        <!-- </div> -->
+        
           <hr class="my-4">
 
           <h5>Your most productive time:</h5>
-          <div class="radio">
+          <div class="radio" id="time">
             <label>
               <input type="radio" name="time" value="morning" checked>
               Morning
@@ -94,11 +95,18 @@
 
       <div class="card-hidden">
         <div class="card border-secondary mb-3" style="max-width: 18rem;">
-          <div class="card-header">Header</div>
+          <div class="card-header">Thank you, <span class="firstLastName"></span>!</div>
           <div class="card-body text-secondary">
-            <h5 class="card-title">Secondary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">This is your confirmation letter.</h5>
+            <p class="card-text">
+              
+              Music choice: <span class="singer"></span>
+              <p>Your most active time: <span class="time"></span></p>
+              <p>You were born on: <span class="dob"></span></p>
+              <p>Your fav color is the color of this card <span class="color"></span></p>
+              
+            
+            </p>
           </div>
         </div>
       </div>
