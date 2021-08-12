@@ -5,19 +5,18 @@
   margin: auto;
 }
 
-.container.p {
-  text-align: center;
-}
-
 .inner-container {
   max-width: 400px;
   margin: auto;
 }
 
-/* .row {
-  background-color: bg-secondary;
-  color: text-white;
-} */
+.card-showing {
+  display: block;
+}
+
+.card-hidden {
+  display: none;
+}
 
 .btn {
   margin: 7px;

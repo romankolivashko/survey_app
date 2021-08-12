@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/styles.css">
@@ -7,99 +8,103 @@
   <script src="js/scripts.js"></script>
   <title>Survey time!</title>
 </head>
+
 <body>
   <div class="container">
-  <div class="jumbotron">
-    <h1 class="display-4">Survey time!</h1>
-    <p class="lead">This is a simple survey, so simple that it will let us read your psychological profile in few quick seconds, you'll be done in no time and we will collect a small profit.</p>
-    <hr class="my-4">
-    <p style="text-align: center">Please answer all the questions bellow to your best ability.</p>
-  
+    <div class="jumbotron">
+      <h1 class="display-4">Survey time!</h1>
+      <p class="lead">This is a simple survey, so simple that it will let us read your psychological profile in few
+        quick seconds, you'll be done in no time and we will collect a small profit.</p>
+      <hr class="my-4">
 
-<div class="inner-container">
+      <div class="inner-container card-showing">
+        <p style="text-align: left"><strong>Please answer all the questions bellow to your best ability.</strong></p>
+        <form>
+          <div class="form-group">
+            <label for="firstName">
+              <h5>Some info about you</h5>
+            </label>
+            <input type="text" class="form-control" id="firstLastName" placeholder="First and Last names">
+          </div>
 
-  <form>
-    <div class="form-group">
-      <label for="firstName"><h5>Some info about you</h5></label>
-      <input type="text" class="form-control" id="firstLastName" placeholder="First and Last names">
+          <hr class="my-4">
+
+          <h5>Favorite singer:</h5>
+          <select class="form-control" id="singer">
+            <label for="singer"></label>
+            <option value="1">David Bowie</option>
+            <option value="2">Cardi B</option>
+            <option value="3">Bruce Springsteen</option>
+            <option value="4">Conway Twitty</option>
+            <option value="5">Celine Dion</option>
+          </select>
+
+          <hr class="my-4">
+
+          <h5>Your most productive time:</h5>
+          <div class="radio">
+            <label>
+              <input type="radio" name="time" value="morning" checked>
+              Morning
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="time" value="noon">
+              Around noon
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="time" value="afternoon">
+              Afternoon
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="time" value="night">
+              Night
+            </label>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-group">
+            <label for="born">
+              <h5>Date of birth:</h5>
+            </label>
+            <input id="born" class="form-control" type="date">
+          </div>
+
+          <!-- Use this to check -->
+          <!-- const dob = $("#born").val(); -->
+
+          <hr class="my-4">
+
+          <div class="form-group">
+            <label for="color">
+              <h5>Pick your favorite color?</h5>
+            </label>
+            <input id="color" class="form-control" type="color">
+          </div>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Submit</a>
+        </form>
+      </div>
+
+      <div class="card-hidden">
+        <div class="card border-secondary mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body text-secondary">
+            <h5 class="card-title">Secondary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <!-- <div class="form-group">
-      <label for="lastName"></label>
-      <input type="text" class="form-control" id="lastName" placeholder="Last name">
-    </div> -->
-    <hr class="my-4">
-
-
-
-  <!-- 
-Use this to check the value -->
-<!-- const beverage = $("#beverage").val(); -->
-
-  <h5>Favorite singer:</h5>
-  <select class="form-control" id="singer">
-    <label for="singer"></label>
-    <option value="1">David Bowie</option>
-    <option value="2">Cardi B</option>
-    <option value="3">Bruce Springsteen</option>
-    <option value="4">Conway Twitty</option>
-    <option value="5">Celine Dion</option>
-  </select>
-
-  <hr class="my-4">
-
-  <h5>Your most productive time:</h5>
-  <div class="radio">
-    <label>
-      <input type="radio" name="time" value="morning" checked>
-      Morning
-    </label>
-  </div>
-
-  <div class="radio">
-    <label>
-      <input type="radio" name="time" value="noon">
-      Around noon
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="time" value="afternoon">
-      Afternoon
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="time" value="night">
-      Night
-    </label>
-  </div>
-
-  <hr class="my-4">
-
-  <div class="form-group">
-    <label for="born"><h5>Date of birth:</h5></label>
-    <input id="born" class="form-control" type="date">
-  </div>
-
-  <!-- Use this to check -->
-  <!-- const dob = $("#born").val(); -->
-
-  <hr class="my-4">
-
-  <div class="form-group">
-    <label for="color"><h5>Pick your favorite color?</h5></label>
-    <input id="color" class="form-control" type="color">
-  </div>
-
-  <!-- Use this to check -->
-  <!-- const favoriteColor = $("#color").val(); -->
-
-
-
-  <a class="btn btn-primary btn-lg" href="#" role="button">Submit</a>
-</form>
-</div>
-</div>
   </div>
 </body>
+
 </html>
