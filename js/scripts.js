@@ -6,7 +6,9 @@ $(document).ready(function() {
 
     const name = $("input#firstLastName").val();
     const singer = $("select#singer").val();
-    const time= $("input#time").val();
+    // const time = $("input#time").val();
+    // ("input:radio[name=operator]:checked").val()
+    const time = $("input:radio[name=time]:checked").val();
     const dob = $("input#born").val();
     const color = $("input#color").val();
 
